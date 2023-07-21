@@ -91,4 +91,4 @@ if st.sidebar.button('Show Recommendation'):
                     st.write("Video not available.")
                 st.write("------------------------------")
     else:
-        st.subheader('There is no movies on these paramet
+        st.subheader('There is no movies on these parameters')
