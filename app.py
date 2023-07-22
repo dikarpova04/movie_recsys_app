@@ -9,18 +9,18 @@ from api.tmdb import TMDBApi
 from recsys import ContentBaseRecSys
 
 TOP_K = 5
-# load_dotenv()
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+API_KEY_TMDB = os.getenv("API_KEY_TMDB")
+MOVIES = os.getenv("MOVIES")
+DISTANCE = os.getenv("DISTANCE")
+
 #
-# API_KEY = os.getenv("API_KEY")
-# API_KEY_TMDB = os.getenv("API_KEY_TMDB")
-# MOVIES = os.getenv("MOVIES")
-# DISTANCE = os.getenv("DISTANCE")
-
-API_KEY = st.secrets['API_KEY']
-API_KEY_TMDB = st.secrets['API_KEY_TMDB']
-MOVIES = 'assets/movies.csv'
-DISTANCE = 'assets/distance.csv'
-
+# API_KEY = st.secrets['API_KEY']
+# API_KEY_TMDB = st.secrets['API_KEY_TMDB']
+# MOVIES = 'assets/movies.csv'
+# DISTANCE = 'assets/distance.csv'
 
 omdbapi = OMDBApi(API_KEY)
 tmdbapi = TMDBApi(API_KEY_TMDB)
