@@ -1,6 +1,6 @@
 # Movie Recommendation System App
 
-![App Screenshot](images\screenshot_app.jpg")
+![App Screenshot](images/screenshot_app.jpg)
 
 
 This is a movie recommendation system app that suggests the most compatible movies based on the input movie title, 
